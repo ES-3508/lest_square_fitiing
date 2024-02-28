@@ -46,7 +46,7 @@ def main():
         UN = df['U'].values
 
         # Define the order 'n' for the polynomial
-        n = 2  # You can adjust this value if needed
+        n = st.selectbox("Select the order of the polynomial", options=[1,2, 3, 4, 5,6,7])
 
         # Calculate Z values
         Z = getZ(E, N, UN, n)
